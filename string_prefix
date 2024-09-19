@@ -1,0 +1,11 @@
+n=int(input())
+mat=[]
+a=[]
+for i in range(n):
+    mat.append(input().strip()[:3])
+for i in mat:
+    if i not in a:
+        a.append(i)
+sor=sorted(a)
+for i in sor:
+    print(i,mat.count(i))
